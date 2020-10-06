@@ -1,0 +1,5 @@
+menu
+thumbnail s/imagem
+thumbnail c/imagem
+people
+footer
