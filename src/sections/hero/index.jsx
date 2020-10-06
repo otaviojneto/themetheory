@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DivHero from './styles';
-import Text from '../text';
+import Text from '../../components/text';
 import Colors from '../../styles/colors';
 
 export default class Hero extends Component {
@@ -11,7 +11,7 @@ export default class Hero extends Component {
                     color={Colors.white}
                     lineHeight={50}
                     mb={20}
-                    size={51}
+                    size={50}
                     weight={100}
                 >
                     {this.props.title}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Hero from '../../components/hero';
+import Hero from '../../sections/hero';
 import Bg from '../../assets/images/banner.jpg';
-
+import Button from '../../components/button';
 export default class Home extends Component {
     render() {
         return (
@@ -13,6 +13,8 @@ export default class Home extends Component {
                         'A free responsive HTML5 website template by TEMPLATED.'
                     }
                 />
+
+                <Button onClick={() => alert('AQUI!')}>More</Button>
             </>
         );
     }
