@@ -51,7 +51,6 @@ function getWidthGrid(value) {
 }
 
 export const Col = styled.div`
-    box-sizing: border-box;
     min-height: 1px;
     padding-left: 16px;
     padding-right: 16px;

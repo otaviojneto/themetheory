@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     * {
         border:0;
         box-sizing: border-box;
-        font-family: 'kumbh Sans' , sans-serif;
+        font-family: 'Raleway' , sans-serif;
         margin: 0;
         outline: none !important;
         padding: 0;
@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
         body,
         html {
             color: ${Colors.grey};
-            background-color: ${Colors.light};
+            background-color: ${Colors.white};
             font-size: 16px;
         }
 
