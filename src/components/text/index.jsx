@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Txt } from './styles';
+import Txt from './styles';
 
 export default class Text extends Component {
     render() {
         return (
             <Txt
+                align={this.props.align}
                 color={this.props.color}
                 lineHeight={this.props.lineHeight}
                 mb={this.props.mb}

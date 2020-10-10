@@ -4,6 +4,10 @@ import { device } from './device';
 export const Row = styled.div`
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: ${props => props.mb && props.mb + 'px'};
+    margin-top: ${props => props.mt && props.mt + 'px'};
+    padding-bottom: ${props => props.pb && props.pb + 'px'};
+    padding-top: ${props => props.pt && props.pt + 'px'};
 `;
 
 export const Container = styled.div`
