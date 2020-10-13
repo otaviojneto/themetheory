@@ -11,6 +11,7 @@ import Posts from '../../sections/post';
 import React, { Component } from 'react';
 import Team from '../../sections/team';
 import Footer from '../../sections/footer';
+import Menu from '../../components/menu';
 
 export default class Home extends Component {
     state = {
