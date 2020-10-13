@@ -21,7 +21,7 @@ class Users extends Component {
                     lineHeight={30}
                     color={Colors.white}
                 >
-                    {this.props.name}
+                    {this.props.title}
                 </Text>
                 {/* descrição */}
                 <Text
@@ -29,9 +29,9 @@ class Users extends Component {
                     weight={300}
                     size={15}
                     lineHeight={24}
-                    color={Colors.lightBlue}
+                    color={Colors.lightOpacity}
                 >
-                    {this.props.description}
+                    {this.props.subtitle}
                 </Text>
             </Box>
         );

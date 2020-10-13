@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Text from '../../components/text';
 import Users from '../../components/users';
 import Colors from '../../styles/colors';
-import { Container } from '../../styles/grid';
+import { Col, Container, Row } from '../../styles/grid';
 import Ground from './styles';
 
 export default class Team extends Component {
@@ -32,9 +32,20 @@ export default class Team extends Component {
                         {this.props.subtitle}
                     </Text>
 
-                    <Users name={'Name'} description={'olsssssssssss'} />
+                    <Row>
+                        {/* criar props data */}
 
-                    {/* criar props data */}
+                        {this.props.data.map((item, index) => (
+                            <Col key={index} xl={3}>
+                                <Users
+                                    img={item.img}
+                                    alt={item.alt}
+                                    title={item.title}
+                                    subtitle={item.subtitle}
+                                />
+                            </Col>
+                        ))}
+                    </Row>
                 </Container>
             </Ground>
         );

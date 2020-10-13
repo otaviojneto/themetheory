@@ -3,6 +3,10 @@ import Bg from '../../assets/images/banner.jpg';
 import Hero from '../../sections/hero';
 import More from '../../sections/more';
 import Team from '../../sections/team';
+import pic03 from '../../assets/images/pic03.jpg';
+import pic04 from '../../assets/images/pic04.jpg';
+import pic05 from '../../assets/images/pic05.jpg';
+import pic06 from '../../assets/images/pic06.jpg';
 
 export default class Home extends Component {
     state = {
@@ -29,6 +33,32 @@ export default class Home extends Component {
                 onClick: () => alert('Chega de Clicar!'),
             },
         ],
+        team: [
+            {
+                img: pic03,
+                alt: 'pic03',
+                title: 'Ipsum Feugiat',
+                subtitle: 'Cipdum dolor',
+            },
+            {
+                img: pic04,
+                alt: 'pic04',
+                title: 'Ipsum Feugiat',
+                subtitle: 'Vestibulum comm',
+            },
+            {
+                img: pic05,
+                alt: 'pic05',
+                title: 'Ipsum Feugiat',
+                subtitle: 'Fusce pellentes',
+            },
+            {
+                img: pic06,
+                alt: 'pic06',
+                title: 'Ipsum Feugiat',
+                subtitle: 'Praesent placer',
+            },
+        ],
     };
 
     render() {
@@ -47,6 +77,7 @@ export default class Home extends Component {
                 <Team
                     title={'Ipsum Feugiat'}
                     subtitle={'Semper suscipit posuere apede'}
+                    data={this.state.team}
                 />
             </>
         );
