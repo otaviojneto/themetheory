@@ -10,6 +10,7 @@ import pic06 from '../../assets/images/pic06.jpg';
 import Posts from '../../sections/post';
 import React, { Component } from 'react';
 import Team from '../../sections/team';
+import Footer from '../../sections/footer';
 
 export default class Home extends Component {
     state = {
@@ -108,6 +109,8 @@ export default class Home extends Component {
                     subtitle={'Aliquam erat volutpat nam dui'}
                     title={'Nunc Dignissim'}
                 />
+
+                <Footer />
             </>
         );
     }

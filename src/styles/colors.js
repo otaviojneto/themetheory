@@ -8,7 +8,8 @@ const Colors = {
     warning: '#eccc68',
     white: '#ffffff',
     greyFast: '#9a9a9a',
-    lightOpacity: `#ffffff4D`,
+    lightOpacity: '#ffffff4D',
+    transparent: '#dbdbdb',
 };
 
 export const Opacity = {
