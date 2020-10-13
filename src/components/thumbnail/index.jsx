@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Text from '../text';
 import Button from '../button';
 import Colors from '../../styles/colors';
+import { Image } from './styles';
 
 class Thumbnail extends Component {
     render() {
@@ -9,7 +10,7 @@ class Thumbnail extends Component {
             <div>
                 {/* imagem  */}
                 {this.props.img && (
-                    <img src={this.props.img} alt={this.props.alt} />
+                    <Image src={this.props.img} alt={this.props.alt} />
                 )}
 
                 {/* titulo */}

@@ -4,7 +4,7 @@ const Colors = {
     grey: '#2f3542',
     light: '#ffffff8c',
     primary: '#5385C1',
-    success: '#2ed573',
+    success: '#bbbbbb',
     warning: '#eccc68',
     white: '#ffffff',
     greyFast: '#9a9a9a',

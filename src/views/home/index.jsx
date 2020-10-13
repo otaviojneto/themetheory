@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
 import Bg from '../../assets/images/banner.jpg';
 import Hero from '../../sections/hero';
 import More from '../../sections/more';
-import Team from '../../sections/team';
+import pic01 from '../../assets/images/pic01.jpg';
+import pic02 from '../../assets/images/pic02.jpg';
 import pic03 from '../../assets/images/pic03.jpg';
 import pic04 from '../../assets/images/pic04.jpg';
 import pic05 from '../../assets/images/pic05.jpg';
 import pic06 from '../../assets/images/pic06.jpg';
+import Posts from '../../sections/post';
+import React, { Component } from 'react';
+import Team from '../../sections/team';
 
 export default class Home extends Component {
     state = {
@@ -59,6 +62,26 @@ export default class Home extends Component {
                 subtitle: 'Praesent placer',
             },
         ],
+        posts: [
+            {
+                alt: 'pic01',
+                img: pic01,
+                title: 'Praesent placerat magna',
+                description:
+                    'Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.',
+                btn: 'More',
+                onClick: () => this.handleAlert('uhulll'),
+            },
+            {
+                alt: 'pic02',
+                img: pic02,
+                title: 'Fusce pellentesque tempus',
+                description:
+                    'Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.',
+                btn: 'More',
+                onClick: () => this.handleAlert('Posteeeeee'),
+            },
+        ],
     };
 
     render() {
@@ -66,20 +89,33 @@ export default class Home extends Component {
             <>
                 <Hero
                     bg={Bg}
-                    title={'Welcome to Theory'}
                     subtitle={
                         'A free responsive HTML5 website template by TEMPLATED.'
                     }
+                    title={'Welcome to Theory'}
                 />
 
                 <More data={this.state.thumbnail} />
 
                 <Team
-                    title={'Ipsum Feugiat'}
-                    subtitle={'Semper suscipit posuere apede'}
                     data={this.state.team}
+                    subtitle={'Semper suscipit posuere apede'}
+                    title={'Ipsum Feugiat'}
+                />
+
+                <Posts
+                    data={this.state.posts}
+                    subtitle={'Aliquam erat volutpat nam dui'}
+                    title={'Nunc Dignissim'}
                 />
             </>
         );
+    }
+
+    // ====================================================
+    //                                            Functions
+    // ====================================================
+    handleAlert(txt) {
+        alert(txt);
     }
 }
