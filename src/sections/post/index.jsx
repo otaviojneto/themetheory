@@ -31,7 +31,7 @@ export default class Posts extends Component {
                     {this.props.subtitle}
                 </Text>
 
-                <Row pb={200}>
+                <Row pb={this.props.pb}>
                     {this.props.data.map((item, index) => (
                         <Col key={index} xl={6}>
                             <Thumbnail

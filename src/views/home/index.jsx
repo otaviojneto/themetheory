@@ -1,6 +1,6 @@
 import Bg from '../../assets/images/banner.jpg';
 import Hero from '../../sections/hero';
-import Menu from '../../components/nav';
+import Menu from '../../sections/menu';
 import More from '../../sections/more';
 import pic01 from '../../assets/images/pic01.jpg';
 import pic02 from '../../assets/images/pic02.jpg';
@@ -89,7 +89,8 @@ export default class Home extends Component {
     render() {
         return (
             <>
-                <Menu></Menu>
+                <Menu home />
+
                 <Hero
                     bg={Bg}
                     subtitle={
@@ -110,6 +111,7 @@ export default class Home extends Component {
                     data={this.state.posts}
                     subtitle={'Aliquam erat volutpat nam dui'}
                     title={'Nunc Dignissim'}
+                    pb={200}
                 />
 
                 <Footer />
