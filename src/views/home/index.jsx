@@ -1,5 +1,6 @@
 import Bg from '../../assets/images/banner.jpg';
 import Hero from '../../sections/hero';
+import Menu from '../../components/nav';
 import More from '../../sections/more';
 import pic01 from '../../assets/images/pic01.jpg';
 import pic02 from '../../assets/images/pic02.jpg';
@@ -11,7 +12,6 @@ import Posts from '../../sections/post';
 import React, { Component } from 'react';
 import Team from '../../sections/team';
 import Footer from '../../sections/footer';
-import Menu from '../../components/menu';
 
 export default class Home extends Component {
     state = {
@@ -89,6 +89,7 @@ export default class Home extends Component {
     render() {
         return (
             <>
+                <Menu></Menu>
                 <Hero
                     bg={Bg}
                     subtitle={
